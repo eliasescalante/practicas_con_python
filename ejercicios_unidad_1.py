@@ -88,4 +88,18 @@ while validacion == 0:
     else:
         print("opcion invalida")
         
+# EJERCICIO 5
+
+# Escriba un programa que solicite un valor entero por pantalla y presente en la terminal del
+# editor el valor incrementado en un 10%
+
+#funcion para calcular el 10% de un numero y aumentarlo
+def diez_porciento_del_valor(valor):
+    diez_porciento_de_valor = valor * 0.1
+    resultado = diez_porciento_de_valor + valor
+    return resultado
+
+valor = float(input("ingresa un numero: "))
+print(f"el valor aumentado en un 10% del {valor} es {diez_porciento_del_valor(valor)}")
+
 
