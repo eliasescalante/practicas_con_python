@@ -26,11 +26,17 @@ print(f"el resultado de la cuenta es: {result}")
 # son múltiplos de dos.
 
 
-
-
 def multiples_numbers_of_2(num1, num2, num3):
     if num1 % 2 == 0 and num2 % 2 == 0 and num3 % 2 == 0:
         return True
+    elif num1 % 2 != 0 and num2 % 2 == 0 and num3 % 2 == 0:
+        return "el primer numero no es par. El segundo y el tercero si"
+    elif num1 % 2 == 0 and num2 % 2 == 0 and num3 % 2 != 0:
+        return "los dos primeros numeros son pares. El ultimo no lo es."
+    elif num1 % 2 == 0 and num2 % 2 != 0 and num3 % 2 == 0:
+        return "solo el primero y el tercero son pares. El segundo no"
+    else:
+        return False
 
 arg = sys.argv
 
@@ -39,6 +45,9 @@ if len(sys.argv) != 4:
     print("debes introducir exactamente 3 argumentos")
 else :
     print(multiples_numbers_of_2(*map(int, arg[1:])))
+
+# Para probar en consola
+# python ejercicios_unidad_1.py 2 6 7
 
 """ ejercicio 3 y 4
 Escriba un programa que solicite el radio de una circunferencia y
