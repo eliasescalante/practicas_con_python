@@ -1,2 +1,2 @@
 # utn_python
-practicas del curso
+Practicas de la diplomatura
